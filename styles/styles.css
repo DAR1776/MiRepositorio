@@ -24,12 +24,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
 }
 
 .footer-icons img {
     padding: 0 5px;
-    height: 40px;
+    height: 30px;
     width: 40px;
 }
 
@@ -46,7 +45,7 @@ footer h3 {
 }
 
 /***************************************************** HOME *****************************************************/
-.contenido-home { 
+.seccion-home { 
     padding:50px 0 50px 0;
     background-color: #dbdbcf;
 }
@@ -60,7 +59,7 @@ footer h3 {
     margin-top: 30px;
 }
 
-.contenido-home span {
+.seccion-home span {
     font-size: 150%;
     text-align: center;
 }
@@ -70,14 +69,14 @@ footer h3 {
     padding: 15px;
 }
     
-.contenido-home button a {
+.seccion-home button a {
     text-decoration: none;
     font-size: 125%;
     font-weight:bold;
 }
 
 /***************************************************** NOSOTROS *****************************************************/
-.contenido-nosotros {
+.seccion-nosotros {
     display:flex ;
     flex-direction: row;
     justify-content: center;
@@ -85,8 +84,6 @@ footer h3 {
     background-color: #dbdbcf;
     padding: 100px 0 100px 0;
 }
-
-
 
 .contenido-nosotros-txt {
     width: 50%;
@@ -103,7 +100,7 @@ footer h3 {
 } 
 
 @media screen and (max-width: 780px) {
-    .contenido-nosotros {
+    .seccion-nosotros {
         flex-direction: column;
     }
     .contenido-nosotros-img {
@@ -116,16 +113,16 @@ footer h3 {
 }
 
 /***************************************************** PRODUCTOS *****************************************************/
-.contenido-productos {
+.seccion-productos {
     display: flex;
     flex-direction: row;
-    flex-wrap:   wrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: #dbdbcf; 
 }
 
-.contenido-productos h1 {
+.seccion-productos h1 {
     width: 100%;
     margin-top: 20px;
     text-align: center;
@@ -157,8 +154,11 @@ footer h3 {
 }
 
 @media screen and (max-width: 1280px) {
-    .contenido-productos {
+    .seccion-productos {
         flex-direction: column;
+    }
+    .productos {
+        flex-wrap: nowrap; 
     }
     .producto {
         margin: 40px 0 40px 0 ;
@@ -204,10 +204,12 @@ footer h3 {
 .contenido-envio h3 {
     margin:20px ;
     font-size: 400%;
+    text-align: center;
     color:#478138
 }
 .contenido-envio h2 {
-    font-size: 200%;
+    text-align: center;
+    font-size: 150%;
 }
 
 
