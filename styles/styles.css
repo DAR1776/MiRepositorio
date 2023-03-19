@@ -17,7 +17,7 @@
 /***************************************************** FOOTER *****************************************************/
 footer {
     padding: 10px 0 5px 0;
-    background-color:#828385;
+    background-color:#6C6C6C;
 }
 
 .footer-icons {
@@ -42,7 +42,7 @@ footer h4,h2 {
 footer h3 {
     font-size: 120%;
     text-align: center;
-    color: #d4d4d4;
+    color: #a8a8a8;
 }
 
 /***************************************************** HOME *****************************************************/
@@ -119,7 +119,7 @@ footer h3 {
 .contenido-productos {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:   wrap;
     justify-content: center;
     align-items: center;
     background-color: #dbdbcf; 
@@ -226,7 +226,7 @@ h1, h2, h3, h4, span, p {
 
 button{
     color: #dbdbcf;
-    background-color: #6b4eee;
+    background-color: #2F3434;
     border: 2px solid black;
     border-radius: 15px;
 }
