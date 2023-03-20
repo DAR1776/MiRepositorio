@@ -115,22 +115,25 @@ footer h3 {
 /***************************************************** PRODUCTOS *****************************************************/
 .seccion-productos {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #dbdbcf; 
 }
 
 .seccion-productos h1 {
-    width: 100%;
     margin-top: 20px;
     text-align: center;
 }
 
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .producto {
     background-color: #f3f3f1;
-    margin: 80px;
+    margin: 4vw;
 }
 
 .producto img {
@@ -153,15 +156,21 @@ footer h3 {
     color: #f3f3f1;
 }
 
-@media screen and (max-width: 1280px) {
-    .seccion-productos {
-        flex-direction: column;
-    }
+.tabla{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px;
+}
+
+.block{
+    background-color: #478138;
+    border:1px solid black;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1080px) {
     .productos {
-        flex-wrap: nowrap; 
-    }
-    .producto {
-        margin: 40px 0 40px 0 ;
+        flex-direction: column;
     }
 }
 
