@@ -66,15 +66,10 @@ footer h3 {
 
 .contenido-home-cta button {
     margin-top: 30px;
-    padding: 15px;
+    background-color: #2F3434;
+    border-radius: 15px;
 }
     
-.seccion-home button a {
-    text-decoration: none;
-    font-size: 125%;
-    font-weight:bold;
-}
-
 /***************************************************** NOSOTROS *****************************************************/
 .seccion-nosotros {
     display:flex ;
@@ -258,9 +253,14 @@ h1, h2, h3, h4, span, p {
     color:#181818
 }
 
-button{
-    color: #dbdbcf;
+button {
+    margin-top: 30px;
     background-color: #2F3434;
-    border: 2px solid black;
     border-radius: 15px;
+    padding:10px;
+}
+
+button a{
+    text-decoration: none;
+    color: #dbdbcf;
 }
