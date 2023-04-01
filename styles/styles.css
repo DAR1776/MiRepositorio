@@ -9,7 +9,15 @@
 /***************************************************** MENU *****************************************************/
 .nav-link{
     margin-left:60px;
+    transform: scale(1);
+    transition:transform .4s ease ;
 }
+
+.nav-link:hover{
+    transform: scale(1.2);
+    transition:transform .4s ease ;
+}
+
 .navbar a{
     font-size: 20px;
 }
@@ -88,7 +96,15 @@ footer h3 {
 
 .contenido-nosotros-img  {
     width: 50%;
+    transform: scale(1);
+    transition:transform .4s ease ;
 } 
+
+.contenido-nosotros-img:hover{
+    transform: scale(1.3);
+    transition:transform .4s ease ;
+}  
+
 
 .contenido-nosotros-img img {
     height: 100%;
@@ -127,16 +143,26 @@ footer h3 {
     flex-direction: row;
     justify-content: center;
 }
+
 .producto {
     background-color: #f3f3f1;
-    margin: 1vw 4vw 3vw 1vw;
+    margin: 1vw 4vw 3vw 1vw;    
+
 }
+
+.producto img:hover{
+    transform: scale(1.1);
+    transition:transform .4s ease ;
+} 
 
 .producto img {
     height: 340px;
     width: 220px;
-    margin: 30px;
+    margin: 30px;    
+    transform: scale(1);
+    transition:transform .4s ease ;    
 }
+
 .producto span {
     text-align:center;
     margin: 6% auto 9% auto;
