@@ -50,6 +50,7 @@ footer {
 footer h4,h2 {
     margin: 10px 0 10px 0;
     font-size: 150%;
+    text-decoration: none;
 }
 
 footer h3 {
@@ -107,7 +108,7 @@ footer h3 {
 } 
 
 .contenido-nosotros-img:hover{
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition:transform .4s ease ;
 }  
 
@@ -117,9 +118,10 @@ footer h3 {
     width: 100%;
 } 
 
-@media screen and (max-width: 780px) {
-    .seccion-nosotros {
+@media screen and (max-width: 850px) {
+    .contenido-nosotros {
         flex-direction: column;
+        padding: 50px;
     }
     .contenido-nosotros-img {
         margin-top: 50px;
@@ -127,6 +129,7 @@ footer h3 {
     }
     .contenido-nosotros-txt {
         width: 100%;
+        padding: 0;
     }
 }
 
