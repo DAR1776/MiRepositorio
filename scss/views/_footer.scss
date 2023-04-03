@@ -1,0 +1,32 @@
+//***************************************************** FOOTER *****************************************************//
+
+footer{
+    padding: 10px 0 5px 0;
+    background-color:#2F2F2F;
+
+    h4,h2{
+        margin: 10px 0 10px 0;
+        font-size: 150%;
+        text-decoration: none;
+        color: #919191;
+    }
+
+    h3{
+        font-size: 120%;
+        text-align: center;
+    }
+
+    .footer-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            padding: 0 5px;
+            height: 30px;
+            width: 40px;
+        }
+
+    }
+
+}

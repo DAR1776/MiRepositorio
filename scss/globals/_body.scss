@@ -1,0 +1,23 @@
+//***************************************************** BODY *****************************************************//
+
+body {
+    left: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, span, p {
+    color:#181818
+}
+
+button {
+    margin-top: 30px;
+    background-color: #2F3434;
+    border-radius: 15px;
+    padding:10px;
+}
+
+button a{
+    text-decoration: none;
+    color: $background-color;
+}
