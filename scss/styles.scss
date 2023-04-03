@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+//***************************************************** VARIABLES GLOBALES *****************************************************//
+$background-color: #dbdbcf;
+$button-color: #2F3434;
+$font-color:#181818;
+
+
 //***************************************************** CLASES GENERALES *****************************************************//
 .contenedor-flex-column{
     display:flex;
@@ -14,7 +20,6 @@
 
 //***************************************************** BODY *****************************************************//
 body {
-    margin: 0;
     left: 0;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
@@ -33,7 +38,7 @@ button {
 
 button a{
     text-decoration: none;
-    color: #dbdbcf;
+    color: $background-color;
 }
 
 //***************************************************** MENU *****************************************************//
@@ -55,18 +60,18 @@ button a{
 //***************************************************** FOOTER *****************************************************//
 footer{
     padding: 10px 0 5px 0;
-    background-color:#6C6C6C;
+    background-color:#2F2F2F;
 
     h4,h2{
         margin: 10px 0 10px 0;
         font-size: 150%;
         text-decoration: none;
+        color: #919191;
     }
 
     h3{
         font-size: 120%;
         text-align: center;
-        color: #a8a8a8;
     }
 
     .footer-icons{
@@ -87,7 +92,7 @@ footer{
 //***************************************************** HOME *****************************************************//
 .seccion-home { 
     padding:50px 0 50px 0;
-    background-color: #dbdbcf;
+    background-color: $background-color;
 
     .carousel{
         height: 600px;
@@ -104,7 +109,6 @@ footer{
 
         button{
             margin-top: 30px;
-            background-color: #2F3434;
             border-radius: 15px;
         }
 
@@ -118,7 +122,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #dbdbcf;
+    background-color: $background-color;
     padding: 100px 200px 100px 200px;
 
     .contenido-nosotros-txt{
@@ -170,7 +174,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #dbdbcf;
+    background-color: $background-color;
     
     h1{
         margin: 50px 0 30px 0;
@@ -210,7 +214,6 @@ footer{
 
                 a{
                     text-decoration: none;
-                    color: #f3f3f1;
                 }
 
             }
@@ -258,7 +261,7 @@ footer{
 //***************************************************** CONTACTO *****************************************************//
 .seccion-contacto {
     height: 650px;
-    background-color: #dbdbcf;
+    background-color: $background-color;
 
     form{
         display: flex;
@@ -276,7 +279,6 @@ footer{
 
         a{
             text-decoration: none;
-            color: #f3f3f1;
         }
 
     }
@@ -286,7 +288,7 @@ footer{
 //***************************************************** ENVIO FORMULARIO *****************************************************//
 .seccion-envio {
     height: 600px;
-    background-color: #dbdbcf;
+    background-color: $background-color;
     padding-top: 100px;
 
     h1{

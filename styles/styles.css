@@ -9,7 +9,6 @@
   align-items: center; }
 
 body {
-  margin: 0;
   left: 0;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif; }
@@ -40,15 +39,15 @@ button a {
 
 footer {
   padding: 10px 0 5px 0;
-  background-color: #6C6C6C; }
+  background-color: #2F2F2F; }
   footer h4, footer h2 {
     margin: 10px 0 10px 0;
     font-size: 150%;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #919191; }
   footer h3 {
     font-size: 120%;
-    text-align: center;
-    color: #a8a8a8; }
+    text-align: center; }
   footer .footer-icons {
     display: flex;
     justify-content: center;
@@ -71,7 +70,6 @@ footer {
     margin-top: 30px; }
     .seccion-home .contenido-home-cta button {
       margin-top: 30px;
-      background-color: #2F3434;
       border-radius: 15px; }
 
 .contenido-nosotros {
@@ -138,8 +136,7 @@ footer {
         margin-bottom: 20px;
         padding: 5px 15px; }
         .seccion-productos .productos .producto button a {
-          text-decoration: none;
-          color: #f3f3f1; }
+          text-decoration: none; }
   .seccion-productos .tabla-tallas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -175,8 +172,7 @@ footer {
     margin-top: 15px;
     padding: 5px 15px 5px 15px; }
     .seccion-contacto button a {
-      text-decoration: none;
-      color: #f3f3f1; }
+      text-decoration: none; }
 
 .seccion-envio {
   height: 600px;
