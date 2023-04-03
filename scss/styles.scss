@@ -1,0 +1,317 @@
+//***************************************************** RESET *****************************************************//
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//***************************************************** CLASES GENERALES *****************************************************//
+.contenedor-flex-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//***************************************************** BODY *****************************************************//
+body {
+    margin: 0;
+    left: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, span, p {
+    color:#181818
+}
+
+button {
+    margin-top: 30px;
+    background-color: #2F3434;
+    border-radius: 15px;
+    padding:10px;
+}
+
+button a{
+    text-decoration: none;
+    color: #dbdbcf;
+}
+
+//***************************************************** MENU *****************************************************//
+.nav-link{
+    margin-left:60px;
+    transform: scale(1);
+    transition:transform .4s ease ;
+
+    &:hover{
+        transform: scale(1.2);
+        transition:transform .4s ease ;
+    }
+}
+
+.navbar a{
+    font-size: 20px;
+}
+
+//***************************************************** FOOTER *****************************************************//
+footer{
+    padding: 10px 0 5px 0;
+    background-color:#6C6C6C;
+
+    h4,h2{
+        margin: 10px 0 10px 0;
+        font-size: 150%;
+        text-decoration: none;
+    }
+
+    h3{
+        font-size: 120%;
+        text-align: center;
+        color: #a8a8a8;
+    }
+
+    .footer-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            padding: 0 5px;
+            height: 30px;
+            width: 40px;
+        }
+
+    }
+
+}
+
+//***************************************************** HOME *****************************************************//
+.seccion-home { 
+    padding:50px 0 50px 0;
+    background-color: #dbdbcf;
+
+    .carousel{
+        height: 600px;
+        width: 400px;
+    }
+
+    span{
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .contenido-home-cta{
+        margin-top: 30px;
+
+        button{
+            margin-top: 30px;
+            background-color: #2F3434;
+            border-radius: 15px;
+        }
+
+    }
+
+}
+
+//***************************************************** NOSOTROS *****************************************************//
+.contenido-nosotros {
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbdbcf;
+    padding: 100px 200px 100px 200px;
+
+    .contenido-nosotros-txt{
+        width: 50%;
+        padding: 0 50px 0 50px;
+        text-align: justify;
+    }
+
+    .contenido-nosotros-img{
+        width: 50%;
+        transform: scale(1);
+        transition:transform .4s ease ;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+
+        &:hover{
+            transform: scale(1.2);
+            transition:transform .4s ease ;
+        }
+
+    }
+
+    
+}
+
+@media screen and (max-width: 850px) {
+    .contenido-nosotros {
+        flex-direction: column;
+        padding: 50px;
+
+        .contenido-nosotros-img {
+            margin-top: 50px;
+            width: 90%;
+        }
+        .contenido-nosotros-txt {
+            width: 100%;
+            padding: 0;
+        }
+
+    }
+}
+
+//***************************************************** PRODUCTOS *****************************************************//
+.seccion-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbdbcf;
+    
+    h1{
+        margin: 50px 0 30px 0;
+        text-align: center;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .producto {
+            background-color: #f3f3f1;
+            margin: 1vw 4vw 3vw 1vw;
+            
+            img{
+                height: 340px;
+                width: 220px;
+                margin: 30px;    
+                transform: scale(1);
+                transition:transform .4s ease ;   
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition:transform .4s ease ;
+                }
+
+            }
+
+            span{
+                text-align:center;
+                margin: 6% auto 9% auto;
+            }
+
+            button{
+                margin-bottom: 20px ;
+                padding: 5px 15px;
+
+                a{
+                    text-decoration: none;
+                    color: #f3f3f1;
+                }
+
+            }
+
+        }
+        
+    }
+
+    .tabla-tallas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-bottom: 50px;
+        text-align: center;
+        align-items: center;
+        background-color:#2c2c2c;
+
+        .box {
+            text-align: center;
+            font-size: 150%;
+            color:#f3f3f1;
+            padding: 30px;
+            border: 1px solid #ccc;
+        
+        }
+
+        .titulo{
+            background-color:#141414;
+            font-weight: 500;
+        }
+
+    }
+
+    @media screen and (max-width: 1080px) {
+        .productos {
+            flex-direction: column;
+        }
+        .tabla-tallas{
+            margin:50px 0 50px 0;
+        }
+    }
+
+}
+
+//***************************************************** CONTACTO *****************************************************//
+.seccion-contacto {
+    height: 650px;
+    background-color: #dbdbcf;
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+        div{
+            margin-top: 15px;
+        }
+
+    }
+
+    button{
+        margin-top:15px;
+        padding: 5px 15px 5px 15px;
+
+        a{
+            text-decoration: none;
+            color: #f3f3f1;
+        }
+
+    }
+
+}
+
+//***************************************************** ENVIO FORMULARIO *****************************************************//
+.seccion-envio {
+    height: 600px;
+    background-color: #dbdbcf;
+    padding-top: 100px;
+
+    h1{
+        font-size: 250%;
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 150%;
+    }
+
+    h3{
+        margin:20px ;
+        font-size: 400%;
+        text-align: center;
+        color:#478138
+    }
+
+    @media screen and (max-width: 1080px) {
+        .contenido-envio{
+            padding-top: 50px ;
+        }
+    
+    }
+
+}
