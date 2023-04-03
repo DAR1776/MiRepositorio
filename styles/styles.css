@@ -122,9 +122,8 @@ footer {
     justify-content: center; }
     .seccion-productos .productos .producto {
       background-color: #f3f3f1;
-      margin: 1vw 4vw 3vw 1vw; }
+      margin: 1vw 4vw 3vw 4vw; }
       .seccion-productos .productos .producto img {
-        height: 340px;
         width: 220px;
         margin: 30px;
         transform: scale(1);
