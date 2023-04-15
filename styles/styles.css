@@ -26,6 +26,8 @@ button a {
   justify-content: center;
   align-items: center; }
 
+.carousel{
+  margin: 30px;}
 .nav-link {
   margin-left: 60px;
   transform: scale(1);
